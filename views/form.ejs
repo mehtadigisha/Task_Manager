@@ -1,0 +1,91 @@
+<%- include("./partials/header") %>
+    <div class="login-container">
+        <h2>Welcome to Our Platform</h2>
+        <div class="form-container">
+            <form action="/" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="username" id="username" placeholder="Enter Username" name="uname" required
+                        class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" required
+                     class="form-input">
+                </div>
+                
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+        </div>
+    </div>
+    <%- include("./partials/footer") %>
+        <style>
+            /* Container styling */
+            .login-container {
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            /* Form container styling */
+            .form-container {
+                width: 80%;
+                max-width: 400px;
+                margin: 0 auto;
+                background-color: #f9f9f9;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Form styling */
+            .login-form {
+                text-align: left;
+            }
+
+            /* Form label styling */
+            .form-label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            /* Form input styling */
+            .form-input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            /* Submit button styling */
+            .submit-button {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            /* Submit button hover effect */
+            .submit-button:hover {
+                background-color: #0056b3;
+            }
+
+            /* Form footer styling */
+            .form-footer {
+                margin-top: 20px;
+            }
+
+            /* Form footer link styling */
+            .form-footer a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+            /* Form footer link hover effect */
+            .form-footer a:hover {
+                text-decoration: underline;
+            }
+        </style>
